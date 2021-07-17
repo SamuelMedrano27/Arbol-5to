@@ -24,7 +24,7 @@ public class Interfaz extends  JFrame{
         add(rootPanel);
 
         setTitle("Registro de Pacientes");
-        setSize(600,500);
+        setSize(800,500);
 
         aa.addActionListener(new ActionListener() {
             @Override
@@ -32,7 +32,7 @@ public class Interfaz extends  JFrame{
                 String cadena=JOptionPane.showInputDialog("Inserte el nombre del Padre");
                 arbolTotal.nombre(cadena);
                 if (arbolSecundario == null) {
-                    textField1.setText(  arbolTotal.miRuta());
+                    textField1.setText( arbolTotal.miRuta());
 //                    JOptionPane.showMessageDialog(null,"Tu ruta es --->" + arbolTotal.miRuta());
                 } else {
                     textField1.setText( arbolSecundario.miRuta());

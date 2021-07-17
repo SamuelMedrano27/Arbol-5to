@@ -1,117 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Interfaz">
-  <grid id="27dc6" binding="rootPanel" layout-manager="GridLayoutManager" row-count="8" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="rootPanel" layout-manager="GridLayoutManager" row-count="10" column-count="13" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="558" height="400"/>
+      <xy x="20" y="20" width="1183" height="603"/>
     </constraints>
-    <properties/>
+    <properties>
+      <background color="-853249"/>
+      <enabled value="true"/>
+      <font name="CourierThai"/>
+    </properties>
     <border type="none"/>
     <children>
-      <component id="f37d3" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Ruta actual:"/>
-        </properties>
-      </component>
-      <component id="bc143" class="javax.swing.JButton" binding="inserteElNombreDelButton" default-binding="true">
-        <constraints>
-          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Inserte el nombre del hijo"/>
-        </properties>
-      </component>
-      <component id="5686e" class="javax.swing.JButton" binding="eliminarHijosButton" default-binding="true">
-        <constraints>
-          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Eliminar hijo en específico"/>
-        </properties>
-      </component>
       <component id="68c26" class="javax.swing.JButton" binding="insertaDentroDeHijosButton" default-binding="true">
         <constraints>
-          <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Inserta dentro de hijos"/>
+          <background color="-14188168"/>
+          <font name="Berlin Sans FB Demi"/>
+          <foreground color="-853249"/>
+          <text value="Ingresar a la ruta area/paciente"/>
         </properties>
       </component>
       <component id="d42e9" class="javax.swing.JButton" binding="rutaActualButton" default-binding="true">
         <constraints>
-          <grid row="2" column="0" row-span="2" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Ruta actual"/>
-        </properties>
-      </component>
-      <component id="aac9b" class="javax.swing.JButton" binding="rutaEspecíficaButton" default-binding="true">
-        <constraints>
-          <grid row="3" column="2" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Ruta específica"/>
-        </properties>
-      </component>
-      <component id="aa3a3" class="javax.swing.JButton" binding="crearUnaRutaButton" default-binding="true">
-        <constraints>
-          <grid row="4" column="0" row-span="2" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Crear una ruta"/>
-        </properties>
-      </component>
-      <component id="4dfa3" class="javax.swing.JButton" binding="aa">
-        <constraints>
-          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Inserte/Modifique  nombre del padre"/>
-        </properties>
-      </component>
-      <component id="44de4" class="javax.swing.JButton" binding="mostrarARBOLButton" default-binding="true">
-        <constraints>
-          <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Mostrar ARBOL"/>
-        </properties>
-      </component>
-      <component id="b2118" class="javax.swing.JButton" binding="salirButton" default-binding="true">
-        <constraints>
-          <grid row="7" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Salir"/>
-        </properties>
-      </component>
-      <component id="d0c64" class="javax.swing.JButton" binding="mostrarHijosButton" default-binding="true">
-        <constraints>
-          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Mostrar Hijos"/>
-        </properties>
-      </component>
-      <component id="c48f6" class="javax.swing.JButton" binding="atrasButton" default-binding="true">
-        <constraints>
-          <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Atras"/>
+          <background color="-12593924"/>
+          <font name="Berlin Sans FB Demi"/>
+          <foreground color="-16777216"/>
+          <hideActionText value="true"/>
+          <text value="Ruta actual:"/>
         </properties>
       </component>
       <component id="330cc" class="javax.swing.JTextField" binding="textField1" default-binding="true">
         <constraints>
-          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="1" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
         <properties>
+          <background color="-12593924"/>
+          <font name="Bodoni MT Black"/>
           <text value="***"/>
+        </properties>
+      </component>
+      <component id="d0c64" class="javax.swing.JButton" binding="mostrarHijosButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-14188168"/>
+          <font name="Berlin Sans FB Demi"/>
+          <foreground color="-853249"/>
+          <text value="Mostrar Contenido de Ruta"/>
+        </properties>
+      </component>
+      <component id="44de4" class="javax.swing.JButton" binding="mostrarARBOLButton" default-binding="true">
+        <constraints>
+          <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-14188168"/>
+          <font name="Berlin Sans FB Demi"/>
+          <foreground color="-853249"/>
+          <text value="Mostrar Contenido General"/>
+        </properties>
+      </component>
+      <component id="aac9b" class="javax.swing.JButton" binding="rutaEspecíficaButton" default-binding="true">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-14188168"/>
+          <font name="Berlin Sans FB Demi"/>
+          <foreground color="-853249"/>
+          <text value="Ingresar a una Ruta"/>
+        </properties>
+      </component>
+      <component id="bc143" class="javax.swing.JButton" binding="inserteElNombreDelButton" default-binding="true">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-14188168"/>
+          <font name="Berlin Sans FB Demi"/>
+          <foreground color="-853249"/>
+          <text value="Inserte elementos en la ruta"/>
+        </properties>
+      </component>
+      <component id="4dfa3" class="javax.swing.JButton" binding="aa">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-262400"/>
+          <enabled value="true"/>
+          <font name="Berlin Sans FB Demi"/>
+          <foreground color="-14188168"/>
+          <horizontalAlignment value="0"/>
+          <text value="Inserte/Modifique  nombre del Hospital"/>
+        </properties>
+      </component>
+      <component id="aa3a3" class="javax.swing.JButton" binding="crearUnaRutaButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-14188168"/>
+          <enabled value="true"/>
+          <font name="Berlin Sans FB Demi"/>
+          <foreground color="-853249"/>
+          <text value="Crear una ruta de Directorio"/>
+        </properties>
+      </component>
+      <hspacer id="268cb">
+        <constraints>
+          <grid row="0" column="3" row-span="1" col-span="3" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="5686e" class="javax.swing.JButton" binding="eliminarHijosButton" default-binding="true">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-14188168"/>
+          <font name="Berlin Sans FB Demi"/>
+          <foreground color="-853249"/>
+          <text value="Eliminar elementos de ruta Específico"/>
+        </properties>
+      </component>
+      <component id="ad9fe" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="1" row-span="8" col-span="5" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <icon value="images/FISNAVIFONDOa.png"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="b2118" class="javax.swing.JButton" binding="salirButton" default-binding="true">
+        <constraints>
+          <grid row="9" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-853249"/>
+          <font name="Copperplate Gothic Bold"/>
+          <foreground color="-720851"/>
+          <text value="Salir"/>
+        </properties>
+      </component>
+      <component id="c48f6" class="javax.swing.JButton" binding="atrasButton" default-binding="true">
+        <constraints>
+          <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-853249"/>
+          <font name="Berlin Sans FB Demi"/>
+          <foreground color="-720851"/>
+          <icon value="images/60577.png"/>
+          <text value="Atras"/>
         </properties>
       </component>
     </children>
