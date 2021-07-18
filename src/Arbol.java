@@ -3,7 +3,7 @@ import javax.swing.*;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
-public class Arbol {
+public class Arbol{
     Nodo padre = null;
 
     Arbol() {
@@ -58,11 +58,11 @@ public class Arbol {
             temporal = temporal.hermano;
         }
         if (encontrado == true) {
-            JOptionPane.showMessageDialog(null," Se encontro Hijo !! :(");
+            JOptionPane.showMessageDialog(null," Se encontro Elemento !! :)");
             return new Arbol(temporal);
 
         } else {
-            JOptionPane.showMessageDialog(null," NO ENCONTRADO !! :(");
+            JOptionPane.showMessageDialog(null," NO se encontro  !! :(");
             return arbolPadre; //le retornamos el mismo padre
         }
     }
@@ -74,7 +74,7 @@ public class Arbol {
         temporalDetras = temporalDetras.hijo;
         while (temporal != null) {
             if (nombreAEliminar.equals(temporal.nombre)) {
-               JOptionPane.showMessageDialog(null," ENCONTRADO, Ahora a eliminarlo ! ");
+               JOptionPane.showMessageDialog(null," Se ENCONTRO, Eliminando ......... ! ");
                 if (padre.hijo != temporal) {
                     temporal = temporal.hermano;
                     temporalDetras.hermano = temporal;
@@ -138,7 +138,7 @@ public class Arbol {
                 arbolSacrificado = arbolSacrificado.ingresarAHijo(rutaList.get(i), arbolSacrificado);
             }
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(null,":( Esa ruta no existe :( ");
+            JOptionPane.showMessageDialog(null," Esta ruta no existe :( ");
 
 //Regresa al inicio
             return new Arbol(padre); // Si no se encuentra la ruta, retornamos el arbol con el nodo Padre
@@ -175,7 +175,7 @@ public class Arbol {
         Nodo sacrificado = new Nodo();
         sacrificado = padre.hijo;
         if (sacrificado == null) {
-            JOptionPane.showMessageDialog(null, "No tiene hijos :c ");
+            JOptionPane.showMessageDialog(null, "No tiene Elementos :c ");
         } else {
             ArrayList<String> arr = new ArrayList<>();
             while (sacrificado != null) {
@@ -188,26 +188,35 @@ public class Arbol {
 
     public void mostrarTodo(Nodo nodo, int contRama) {
 // HACER RECURSIVIDAD PARA ENTRAR DE HIJO EN HIJO//
-        String lineaSeparadora = "";
-        String puntos = "•";
+        String lineaSeparadora = "/";
+        String  lineaSeparadora1 = "Elemento";
+        String puntos = " ";
         for (int i = 0; i < contRama; i++) {
-            lineaSeparadora += " ";
+            lineaSeparadora += "==>";
+            lineaSeparadora1 += " -Sub ";
         }
         Nodo sacrificado = new Nodo();
         sacrificado = nodo.hijo;
         Nodo a = new Nodo();
         if (contRama == 0) {
-            JOptionPane.showMessageDialog(null, "Padre :" + nodo.nombre);
+
+            JOptionPane.showMessageDialog(null, "Hospital :" + nodo.nombre);
         }
 
         while (sacrificado != null) {
+
 //funciones recursia
-            JOptionPane.showMessageDialog(null, lineaSeparadora + puntos + sacrificado.nombre);
+
+            JOptionPane.showMessageDialog(null, lineaSeparadora1 + lineaSeparadora + sacrificado.nombre);
+
             a = sacrificado;
+            //Cuando tiene hijos
             if (a != null) {
                 mostrarTodo(a, contRama + 1);
             }
+
             sacrificado = sacrificado.hermano;
+            ;
         }
     }
 

@@ -17,6 +17,8 @@ public class Interfaz extends  JFrame{
     private JButton atrasButton;
     private JButton salirButton;
     private JTextField textField1;
+    private JTextField TextField2;
+    private JTextField fanianSintiEstefanyTextField;
     Arbol arbolTotal = new Arbol();
     Arbol arbolSecundario = null;
 
@@ -35,6 +37,7 @@ public class Interfaz extends  JFrame{
                 arbolTotal.nombre(cadena);
                 if (arbolSecundario == null) {
                     textField1.setText( arbolTotal.miRuta());
+
 //                    JOptionPane.showMessageDialog(null,"Tu ruta es --->" + arbolTotal.miRuta());
                 } else {
                     textField1.setText( arbolSecundario.miRuta());
@@ -45,13 +48,14 @@ public class Interfaz extends  JFrame{
         mostrarARBOLButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+
                 arbolTotal.mostrarTodo(arbolTotal.padre, 0);
             }
         });
         inserteElNombreDelButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String cadena=JOptionPane.showInputDialog("Inserte el nombre del Hijo");
+                String cadena=JOptionPane.showInputDialog("Inserte elemento en la ruta");
                 if (arbolSecundario == null) {
                     arbolTotal.insertarHijo(cadena);
                 } else {
@@ -80,7 +84,7 @@ public class Interfaz extends  JFrame{
         insertaDentroDeHijosButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String val=JOptionPane.showInputDialog("Ingrese al hijo");
+                String val=JOptionPane.showInputDialog("Ingrese a la ruta area/paciente");
                 if (arbolSecundario == null) {
                     arbolSecundario = arbolTotal.ingresarAHijo(val, arbolTotal);
                 } else {
@@ -99,10 +103,10 @@ public class Interfaz extends  JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (arbolSecundario == null) {
-                    String val=JOptionPane.showInputDialog("Inserte el nombre del hijo a eliminar");
+                    String val=JOptionPane.showInputDialog("Inserte el elemento a Eliminar");
                     arbolTotal.eliminarHijo(val);
                 } else {
-                    String val=JOptionPane.showInputDialog("Inserte el nombre del hijo a eliminar");
+                    String val=JOptionPane.showInputDialog("Inserte el elemento a Eliminar");
                     arbolSecundario.eliminarHijo(val);
                 }
                 if (arbolSecundario == null) {
