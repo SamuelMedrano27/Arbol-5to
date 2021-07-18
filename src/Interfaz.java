@@ -25,6 +25,8 @@ public class Interfaz extends  JFrame{
 
         setTitle("Registro de Pacientes");
         setSize(800,500);
+        this.setLocationRelativeTo(null);
+        this.setResizable(false);
 
         aa.addActionListener(new ActionListener() {
             @Override
